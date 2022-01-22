@@ -1,0 +1,10 @@
+.gauge {
+  background-color: #ffffff;
+  width: 300px;
+  /* min-width: 350px; */
+  margin: 5px;
+  text-align: center;
+  padding-top: 40px;
+  line-height: 25px;
+  font-size: 14px;
+}
