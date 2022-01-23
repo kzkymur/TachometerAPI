@@ -201,9 +201,6 @@ web_tachometer_demo_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 web_tachometer_demo_SOURCE_DIR:STATIC=/Users/yamaurakazuki/Lecture/3rd/COJT/TachometerAPI/web_tachometer_demo
 
-//The directory containing a CMake configuration file for websocketpp.
-websocketpp_DIR:PATH=/usr/local/lib/cmake/websocketpp
-
 
 ########################
 # INTERNAL cache entries

@@ -155,6 +155,43 @@ serialToUdpConverter/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/serialToUdpConverter.dir/build.make CMakeFiles/serialToUdpConverter.dir/build
 .PHONY : serialToUdpConverter/fast
 
+#=============================================================================
+# Target rules for targets named daemonUdpToWsConverter
+
+# Build rule for target.
+daemonUdpToWsConverter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 daemonUdpToWsConverter
+.PHONY : daemonUdpToWsConverter
+
+# fast build rule for target.
+daemonUdpToWsConverter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/daemonUdpToWsConverter.dir/build.make CMakeFiles/daemonUdpToWsConverter.dir/build
+.PHONY : daemonUdpToWsConverter/fast
+
+daemonUdpToWsConverter.o: daemonUdpToWsConverter.cpp.o
+.PHONY : daemonUdpToWsConverter.o
+
+# target to build an object file
+daemonUdpToWsConverter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/daemonUdpToWsConverter.dir/build.make CMakeFiles/daemonUdpToWsConverter.dir/daemonUdpToWsConverter.cpp.o
+.PHONY : daemonUdpToWsConverter.cpp.o
+
+daemonUdpToWsConverter.i: daemonUdpToWsConverter.cpp.i
+.PHONY : daemonUdpToWsConverter.i
+
+# target to preprocess a source file
+daemonUdpToWsConverter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/daemonUdpToWsConverter.dir/build.make CMakeFiles/daemonUdpToWsConverter.dir/daemonUdpToWsConverter.cpp.i
+.PHONY : daemonUdpToWsConverter.cpp.i
+
+daemonUdpToWsConverter.s: daemonUdpToWsConverter.cpp.s
+.PHONY : daemonUdpToWsConverter.s
+
+# target to generate assembly for a file
+daemonUdpToWsConverter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/daemonUdpToWsConverter.dir/build.make CMakeFiles/daemonUdpToWsConverter.dir/daemonUdpToWsConverter.cpp.s
+.PHONY : daemonUdpToWsConverter.cpp.s
+
 serialToUdpConverter.o: serialToUdpConverter.cpp.o
 .PHONY : serialToUdpConverter.o
 
@@ -212,8 +249,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... websocketpp"
+	@echo "... daemonUdpToWsConverter"
 	@echo "... serialToUdpConverter"
 	@echo "... udpToWsConverter"
+	@echo "... daemonUdpToWsConverter.o"
+	@echo "... daemonUdpToWsConverter.i"
+	@echo "... daemonUdpToWsConverter.s"
 	@echo "... serialToUdpConverter.o"
 	@echo "... serialToUdpConverter.i"
 	@echo "... serialToUdpConverter.s"

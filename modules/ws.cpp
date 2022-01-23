@@ -1,9 +1,11 @@
 #include <set>
 #include <websocketpp/config/asio_no_tls.hpp>
+// #include <websocketpp/config/asio.hpp>
 #include <websocketpp/server.hpp>
 #include <websocketpp/common/thread.hpp>
 
 typedef websocketpp::server<websocketpp::config::asio> server;
+// typedef websocketpp::lib::shared_ptr<websocketpp::lib::asio::ssl::context> context_ptr;
 
 using websocketpp::connection_hdl;
 using websocketpp::lib::placeholders::_1;

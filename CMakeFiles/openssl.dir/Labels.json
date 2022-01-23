@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/yamaurakazuki/Lecture/3rd/COJT/TachometerAPI/web_tachometer_demo/CMakeFiles/openssl"
+		},
+		{
+			"file" : "/Users/yamaurakazuki/Lecture/3rd/COJT/TachometerAPI/web_tachometer_demo/CMakeFiles/openssl.rule"
+		},
+		{
+			"file" : "/Users/yamaurakazuki/Lecture/3rd/COJT/TachometerAPI/web_tachometer_demo/CMakeFiles/openssl-complete.rule"
+		},
+		{
+			"file" : "/Users/yamaurakazuki/Lecture/3rd/COJT/TachometerAPI/web_tachometer_demo/openssl-prefix/src/openssl-stamp/openssl-build.rule"
+		},
+		{
+			"file" : "/Users/yamaurakazuki/Lecture/3rd/COJT/TachometerAPI/web_tachometer_demo/openssl-prefix/src/openssl-stamp/openssl-configure.rule"
+		},
+		{
+			"file" : "/Users/yamaurakazuki/Lecture/3rd/COJT/TachometerAPI/web_tachometer_demo/openssl-prefix/src/openssl-stamp/openssl-download.rule"
+		},
+		{
+			"file" : "/Users/yamaurakazuki/Lecture/3rd/COJT/TachometerAPI/web_tachometer_demo/openssl-prefix/src/openssl-stamp/openssl-install.rule"
+		},
+		{
+			"file" : "/Users/yamaurakazuki/Lecture/3rd/COJT/TachometerAPI/web_tachometer_demo/openssl-prefix/src/openssl-stamp/openssl-mkdir.rule"
+		},
+		{
+			"file" : "/Users/yamaurakazuki/Lecture/3rd/COJT/TachometerAPI/web_tachometer_demo/openssl-prefix/src/openssl-stamp/openssl-patch.rule"
+		},
+		{
+			"file" : "/Users/yamaurakazuki/Lecture/3rd/COJT/TachometerAPI/web_tachometer_demo/openssl-prefix/src/openssl-stamp/openssl-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"openssl"
+		],
+		"name" : "openssl"
+	}
+}

@@ -55,4 +55,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/websocketpp.dir/DependInfo.cmake"
   "CMakeFiles/udpToWsConverter.dir/DependInfo.cmake"
   "CMakeFiles/serialToUdpConverter.dir/DependInfo.cmake"
+  "CMakeFiles/daemonUdpToWsConverter.dir/DependInfo.cmake"
   )

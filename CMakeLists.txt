@@ -14,10 +14,13 @@ ExternalProject_Add(
   GIT_REPOSITORY https://github.com/zaphoyd/websocketpp
   CMAKE_ARGS     -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
 )
+# include_directories(/usr/local/opt/openssl@1.1/include)
 
 # include_directories(/usr/local/include//)
 include_directories(${CMAKE_INSTALL_PREFIX}/include)
+# set(CMAKE_CXX_FLAGS "-lcrypto")
 
 # a.outという実行ファイルをudpToWsConverter.cppから作成
 add_executable(udpToWsConverter udpToWsConverter.cpp)
 add_executable(serialToUdpConverter serialToUdpConverter.cpp)
+add_executable(daemonUdpToWsConverter daemonUdpToWsConverter.cpp)
