@@ -31,7 +31,7 @@ int main (void) {
     // cout << "receiving: " << data << endl;
     wsServer->broadcast(data);
 
-    char* query;
+    char query[1024];
     int int_data = atoi(data);
     if (0 < int_data && int_data < 20000) {
       sprintf(query, "INSERT INTO tachometer (rpm) values (%d)", int_data);
