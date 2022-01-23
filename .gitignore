@@ -105,17 +105,11 @@ dist
 
 .DS_Store
 
-websocketpp/
-websocketpp-prefix/
-openssl-prefix/
+*prefix/
 
-a.out
 daemonUdpToWsConverter
 udpToWsConverter
 serialToUdpConverter
-serial
-udpClient
-daemon
 
 cmake-3.22*
 cmake_install.cmake

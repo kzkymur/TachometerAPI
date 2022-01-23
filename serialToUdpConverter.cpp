@@ -1,9 +1,9 @@
 #include <iostream>
 #include <thread>
 #include <string>
+#include <toml.hpp>
 #include "modules/udp.cpp"
 #include "modules/serial.cpp"
-#include "modules/toml11/toml.hpp"
 
 using namespace std;
 

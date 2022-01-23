@@ -14,6 +14,12 @@ ExternalProject_Add(
   GIT_REPOSITORY https://github.com/zaphoyd/websocketpp
   CMAKE_ARGS     -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
 )
+ExternalProject_Add(
+  toml11
+  GIT_REPOSITORY https://github.com/ToruNiina/toml11
+  CMAKE_ARGS     -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
+)
+
 # include_directories(/usr/local/opt/openssl@1.1/include)
 
 include_directories(${CMAKE_INSTALL_PREFIX}/include)

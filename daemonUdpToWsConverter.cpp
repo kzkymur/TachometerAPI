@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <iostream>
 #include <string>
-#include "modules/toml11/toml.hpp"
+#include <toml.hpp>
 #include "modules/udp.cpp"
 #include "modules/ws.cpp"
 #include "modules/daemon.cpp"
