@@ -104,3 +104,16 @@ dist
 .tern-port
 
 .DS_Store
+
+websocketpp/
+websocketpp-prefix/
+openssl-prefix/
+a.out
+daemonUdpToWsConverter
+udpToWsConverter
+serialToUdpConverter
+cmake-3.22*
+cmake_3.22*
+Makefile
+CMakeCache
+CMakeFiles/
