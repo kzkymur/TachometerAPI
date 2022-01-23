@@ -21,7 +21,6 @@ int main () {
   cout << "servinig udp and ws now" << endl;
 
   MySQL* mysql = new MySQL(MYSQL_HOST, MYSQL_USER, MYSQL_PASSWD, MYSQL_DBNAME);
-  MYSQL_RES* res = mysql->runQuery("INSERT INTO tachometer (rpm) values (1000)");
 
   while (1) {
     char *data = socket->recieveData(4096);
@@ -29,8 +28,13 @@ int main () {
     wsServer->broadcast(data);
 
     char* query;
-    sprintf(query, "INSERT INTO tachometer (rpm) values (%s)", data);
-    MYSQL_RES* res = mysql->runQuery(query);
+    int int_data = atoi(data);
+    if (0 < int_data && int_data < 20000) {
+      sprintf(query, "INSERT INTO tachometer (rpm) values (%d)", int_data);
+      mysql->runQuery(query);
+    }
+
+    // cout << "loop end" << endl;
   }
   cout << "Finished." << endl;
 

@@ -20,14 +20,22 @@ ExternalProject_Add(
   CMAKE_ARGS     -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
 )
 
-# include_directories(/usr/local/opt/openssl@1.1/include)
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
 
 include_directories(${CMAKE_INSTALL_PREFIX}/include)
+
+# include_directories(/usr/local/opt/openssl@1.1/include)
 # target_link_libraries(web_tachometer_demo -L/usr/local/Cellar/mysql/8.0.27_1/lib)
 # set(CMAKE_CXX_FLAGS "-lcrypto")
-set(CMAKE_CXX_FLAGS "-lmysqlclient -L/usr/local/Cellar/mysql/8.0.27_1/lib")
+
+# set(CMAKE_CXX_FLAGS "-L/usr/local/Cellar/mysql/8.0.27_1/lib -lmysqlclient -lboost_system")
+set(CMAKE_CXX_FLAGS "-L/usr/local/Cellar/mysql/8.0.27_1/lib -lmysqlclient")
 
 # a.outという実行ファイルをudpToWsConverter.cppから作成
-add_executable(udpToWsConverter udpToWsConverter.cpp)
 add_executable(serialToUdpConverter serialToUdpConverter.cpp)
+add_executable(udpToWsConverter udpToWsConverter.cpp)
 add_executable(daemonUdpToWsConverter daemonUdpToWsConverter.cpp)
+
+target_link_libraries(udpToWsConverter "-pthread")
+target_link_libraries(daemonUdpToWsConverter "-pthread")

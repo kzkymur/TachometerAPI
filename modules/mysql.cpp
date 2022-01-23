@@ -21,7 +21,7 @@ class MySQL {
     }
 
     MYSQL_RES* runQuery (char* query) {
-      snprintf(&sql_str[0], sizeof(sql_str)-1, query);
+      snprintf(&sql_str[0], sizeof(sql_str)-1, "%s", query);
       if (mysql_query(conn ,&sql_str[0])) {
         mysql_close(conn);
         exit(-1);
