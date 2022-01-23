@@ -16,9 +16,10 @@ ExternalProject_Add(
 )
 # include_directories(/usr/local/opt/openssl@1.1/include)
 
-# include_directories(/usr/local/include//)
 include_directories(${CMAKE_INSTALL_PREFIX}/include)
+# target_link_libraries(web_tachometer_demo -L/usr/local/Cellar/mysql/8.0.27_1/lib)
 # set(CMAKE_CXX_FLAGS "-lcrypto")
+set(CMAKE_CXX_FLAGS "-lmysqlclient -L/usr/local/Cellar/mysql/8.0.27_1/lib")
 
 # a.outという実行ファイルをudpToWsConverter.cppから作成
 add_executable(udpToWsConverter udpToWsConverter.cpp)

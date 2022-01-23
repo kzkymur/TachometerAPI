@@ -1234,6 +1234,21 @@ CMakeFiles/udpToWsConverter.dir/udpToWsConverter.cpp.o: udpToWsConverter.cpp \
   /usr/local/include/websocketpp/sha1/sha1.hpp \
   /usr/local/include/websocketpp/version.hpp \
   /usr/local/include/websocketpp/impl/endpoint_impl.hpp \
+  modules/mysql.cpp \
+  /usr/local/include/mysql/mysql.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdbool.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include/stdbool.h \
+  /usr/local/include/mysql/field_types.h \
+  /usr/local/include/mysql/my_list.h \
+  /usr/local/include/mysql/mysql_com.h \
+  /usr/local/include/mysql/my_command.h \
+  /usr/local/include/mysql/my_compress.h \
+  /usr/local/include/mysql/mysql/udf_registration_types.h \
+  /usr/local/include/mysql/mysql/client_plugin.h \
+  /usr/local/include/mysql/mysql/plugin_auth_common.h \
+  /usr/local/include/mysql/mysql_version.h \
+  /usr/local/include/mysql/mysql_time.h \
+  /usr/local/include/mysql/errmsg.h \
   modules/toml11/toml.hpp \
   modules/toml11/toml/parser.hpp \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/fstream \
@@ -1295,6 +1310,18 @@ modules/toml11/toml/combinator.hpp:
 
 modules/toml11/toml.hpp:
 
+/usr/local/include/mysql/mysql_time.h:
+
+/usr/local/include/mysql/mysql_version.h:
+
+/usr/local/include/mysql/field_types.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include/stdbool.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdbool.h:
+
+modules/mysql.cpp:
+
 /usr/local/include/websocketpp/impl/endpoint_impl.hpp:
 
 /usr/local/include/websocketpp/sha1/sha1.hpp:
@@ -1327,6 +1354,8 @@ modules/toml11/toml.hpp:
 
 /usr/local/include/boost/asio/windows/basic_random_access_handle.hpp:
 
+/usr/local/include/mysql/my_list.h:
+
 /usr/local/include/boost/asio/windows/basic_overlapped_handle.hpp:
 
 /usr/local/include/boost/asio/windows/basic_object_handle.hpp:
@@ -1358,6 +1387,8 @@ modules/toml11/toml/types.hpp:
 /usr/local/include/boost/asio/impl/thread_pool.hpp:
 
 /usr/local/include/boost/predef/platform/windows_store.h:
+
+/usr/local/include/mysql/my_compress.h:
 
 /usr/local/include/boost/predef/platform/windows_phone.h:
 
@@ -1416,6 +1447,8 @@ modules/toml11/toml/types.hpp:
 /usr/local/include/boost/predef/library/std/_prefix.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stddef.h:
+
+/usr/local/include/mysql/mysql/udf_registration_types.h:
 
 /usr/local/include/boost/predef/detail/_cassert.h:
 
@@ -1508,6 +1541,8 @@ modules/toml11/toml/types.hpp:
 /usr/local/include/boost/predef/make.h:
 
 /usr/local/include/boost/predef/language/stdc.h:
+
+/usr/local/include/mysql/mysql/plugin_auth_common.h:
 
 /usr/local/include/boost/predef.h:
 
@@ -2913,6 +2948,8 @@ udpToWsConverter.cpp:
 
 /usr/local/include/websocketpp/http/constants.hpp:
 
+/usr/local/include/mysql/mysql.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/sys/_types/_useconds_t.h:
 
 /usr/local/include/websocketpp/utilities.hpp:
@@ -3271,6 +3308,8 @@ modules/toml11/toml/exception.hpp:
 
 /usr/local/include/websocketpp/transport/iostream/connection.hpp:
 
+/usr/local/include/mysql/mysql_com.h:
+
 /usr/local/include/boost/asio/execution/connect.hpp:
 
 /usr/local/include/websocketpp/transport/asio/security/base.hpp:
@@ -3340,6 +3379,8 @@ modules/toml11/toml/exception.hpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/assert.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iterator:
+
+/usr/local/include/mysql/errmsg.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ctime:
 
@@ -3495,6 +3536,8 @@ modules/toml11/toml/string.hpp:
 
 /usr/local/include/boost/mpl/aux_/arity.hpp:
 
+/usr/local/include/mysql/my_command.h:
+
 /usr/local/include/boost/cstdint.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/strings.h:
@@ -3630,6 +3673,8 @@ modules/toml11/toml/get.hpp:
 /usr/local/include/boost/date_time/time_system_split.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/libkern/i386/_OSByteOrder.h:
+
+/usr/local/include/mysql/mysql/client_plugin.h:
 
 /usr/local/include/boost/asio/detail/posix_mutex.hpp:
 
