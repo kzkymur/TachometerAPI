@@ -34,7 +34,7 @@ type ResponseInfo = {
 const Response: Responses = {
   async archive (connection: Connection, start: number, end: number) {
     const runQuery = promisify(connection.query.bind(connection));
-    const result = await runQuery(`SELECT * FROM tachometer WHERE time BETWEEN FROM_UNIXTIME(${start}) AND FROM_UNIXTIME(${end});`);
+    const result = await runQuery(`SELECT UNIX_TIMESTAMP(time) as time, rpm FROM tachometer WHERE time BETWEEN FROM_UNIXTIME(${start}) AND FROM_UNIXTIME(${end});`);
     return {
       statusCode: 200,
       contentType: 'application/json',
