@@ -2,6 +2,10 @@
 
 ## Server Build And Host
 ```bash
+mysql
+source ./source.sql;
+exit;
+
 cmake CMakeLists.txt
 make
 ./udpToWsConverter

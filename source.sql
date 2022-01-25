@@ -1,0 +1,10 @@
+CREATE DATABASE tachoAPI;
+
+use tachoAPI;
+
+CREATE TABLE tachometer (
+  time TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP(3),
+  rpm SMALLINT UNSIGNED NOT NULL
+);
+
+INSERT INTO tachometer (rpm) values (1000);
