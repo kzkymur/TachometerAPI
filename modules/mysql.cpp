@@ -8,6 +8,7 @@ class MySQL {
     MYSQL *conn = NULL;
     MYSQL_RES* res;
     char sql_str[255];
+    bool reconnect = 1;
 
   public:
     MySQL (const char* host, const char* user, const char* passwd, const char* dbname) {
@@ -18,6 +19,8 @@ class MySQL {
         exit(-1);
       }
       printf("connected mysql server\n");
+
+      mysql_options(conn, MYSQL_OPT_RECONNECT, &reconnect);
     }
 
     MYSQL_RES* runQuery (char* query) {
