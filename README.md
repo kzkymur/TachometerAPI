@@ -10,7 +10,7 @@ cmake CMakeLists.txt
 make
 ./udpToWsConverter
 
-cd Archive
+cd archive
 npm i
 npm run serve
 ```
@@ -26,7 +26,8 @@ npm run dev
 ```
 ./daemonUdpToWsConverter
 npm i -g forever
-forever start -c "npm run serve" ./Archive
+cd archive;
+forever start -c "npm run serve" .
 ```
 
 ## DemoLink
