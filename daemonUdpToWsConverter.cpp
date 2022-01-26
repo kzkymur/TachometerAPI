@@ -9,9 +9,7 @@
 
 using namespace std;
 
-int main (void) {
-  daemonize(1);
-
+void mainFunc (void) {
   const auto data = toml::parse("./.env.toml");
   const int UDP_PORT = toml::find<int>(data, "UDP_PORT");
   const int WS_PORT = toml::find<int>(data, "WS_PORT");
@@ -39,6 +37,11 @@ int main (void) {
     }
   }
   cout << "Finished." << endl;
+}
+
+int main (void) {
+  daemonize(1);
+  mainFunc();
 
   return 0;
 }
