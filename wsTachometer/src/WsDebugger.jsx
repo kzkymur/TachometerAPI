@@ -1,9 +1,10 @@
-import React, { useCallback, useEffect, useState, } from 'react';
+import React from 'react';
+import { useInput, useWsLogger } from './customHooks';
 
 const WsDebugger = () => {
   const uri = useInput("");
   const sendData = useInput("");
-  const { ws, log, send, connect } = useWs(uri.value);
+  const { ws, log, send, connect } = useWsLogger(uri.value);
 
   const sendMessage = (e) => {
     e.preventDefault();
@@ -32,34 +33,5 @@ const WsDebugger = () => {
     </div>
   );
 }
-
-const useInput = initialValue => {
-  const [value, set] = useState(initialValue)
-  return { value, onChange: (e) => set(e.target.value) }
-};
-
-const useWs = (uri) => {
-  const [ws, setWs] = useState(null);
-  const [log, setLog] = useState([]);
-  const send = useCallback((data) => {
-    if (ws !== null) ws.send(data);
-    setLog([...log, `send: ${data}`]);
-  }, [ws, setLog, log]);
-
-  const connect = useCallback((e)=>{
-    e.preventDefault();
-    if (uri !== "") setWs(new WebSocket(uri));
-    else setWs(null);
-    return () => setWs(null);
-  }, [uri]);
-
-  useEffect(()=>{
-    if (ws === null) return;
-    ws.onmessage = ({data}) => {
-      setLog([...log, `recv: ${data}`]);
-    }
-  }, [ws, log]);
-  return { ws, send, log, connect };
-};
 
 export default WsDebugger;

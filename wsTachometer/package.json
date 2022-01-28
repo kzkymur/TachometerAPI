@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --mode=development",
     "prod": "webpack-dev-server  --mode=production",
     "build": "webpack"
   },
@@ -24,6 +24,7 @@
     "file-loader": "^6.2.0",
     "history": "^4.10.1",
     "html-webpack-plugin": "^4.3.0",
+    "plotly.js": "^2.8.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-gauge-chart": "^0.4.0",
