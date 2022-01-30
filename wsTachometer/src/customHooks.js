@@ -34,6 +34,7 @@ export const useWs = (uri, onMessage) => {
 export const useWsLogger = (uri) => {
   const [ws, setWs] = useState(null);
   const [log, setLog] = useState([]);
+  const clearLog = useCallback(() => { setLog([]); }, [setLog]);
   const send = useCallback((data) => {
     if (ws !== null) ws.send(data);
     setLog([...log, `send: ${data}`]);
@@ -55,5 +56,5 @@ export const useWsLogger = (uri) => {
       setLog([...log, `error!!: ${target.url}`]);
     }
   }, [ws, log]);
-  return { ws, send, log, connect };
+  return { ws, send, log, connect, clearLog, };
 };

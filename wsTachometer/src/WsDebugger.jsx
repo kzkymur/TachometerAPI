@@ -4,7 +4,7 @@ import { useInput, useWsLogger } from './customHooks';
 const WsDebugger = () => {
   const uri = useInput("");
   const sendData = useInput("");
-  const { ws, log, send, connect } = useWsLogger(uri.value);
+  const { ws, log, send, clearLog, connect } = useWsLogger(uri.value);
 
   const sendMessage = (e) => {
     e.preventDefault();
@@ -25,6 +25,7 @@ const WsDebugger = () => {
             <input type="text" {...sendData}/>
             <button onClick={sendMessage}>send</button>
           </form>
+          <button onClick={clearLog}>clear log</button>
           {log.map((item, i) => (
             <li key={i}>{item}</li>
           ))}
