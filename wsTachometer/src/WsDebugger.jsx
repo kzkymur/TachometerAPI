@@ -2,8 +2,8 @@ import React from 'react';
 import { useInput, useWsLogger } from './customHooks';
 
 const WsDebugger = () => {
-  const uri = useInput("");
-  const sendData = useInput("");
+  const uri = useInput({type: 'text', init: ""});
+  const sendData = useInput({type: 'text', init: ""});
   const { ws, log, send, clearLog, connect } = useWsLogger(uri.value);
 
   const sendMessage = (e) => {
@@ -16,13 +16,13 @@ const WsDebugger = () => {
     <div>
       <h1>WebSocket Debugger</h1>
       <form>
-        uri: <input type="text" {...uri}/>
+        uri: <input {...uri}/>
         <button onClick={connect}>connect</button>
       </form>
       {ws !== null ? (
         <div>log
           <form>
-            <input type="text" {...sendData}/>
+            <input {...sendData}/>
             <button onClick={sendMessage}>send</button>
           </form>
           <button onClick={clearLog}>clear log</button>

@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState, } from 'react';
 
-export const useInput = initialValue => {
-  const [value, set] = useState(initialValue);
-  return { value, onChange: (e) => set(e.target.value) };
+export const useInput = ({init, type}) => {
+  const [value, set] = useState(init);
+  return { value, onChange: (e) => set(e.target.value), type };
 };
 
 export const useWs = (uri, onMessage) => {

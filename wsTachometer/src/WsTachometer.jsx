@@ -4,7 +4,7 @@ import Gauge from './Gauge';
 import style from './WsTachometer.css';
 
 const WsTachometer = () => {
-  const uri = useInput("");
+  const uri = useInput({init: "", type: "text"});
   const gaugeRef = useRef();
   const onMessage = useCallback((data) => {
     if (gaugeRef.current?.updateDestiny !== undefined) {
@@ -17,7 +17,7 @@ const WsTachometer = () => {
     <div>
       <h1>WebSocket Tachometer</h1>
       <form>
-        uri: <input type="text" {...uri}/>
+        uri: <input {...uri}/>
         <button onClick={connect}>connect</button>
       </form>
       {ws !== null ? 
