@@ -31,4 +31,4 @@ forever start -c "npm run serve" .
 ```
 
 ## DemoLink
-http://localhost:8080/
+http://tachoapi.kzkymur.com:8888/
